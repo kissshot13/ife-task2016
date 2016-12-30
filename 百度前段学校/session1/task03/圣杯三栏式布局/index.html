@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圣杯三栏式布局</title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	.wrap
+	{
+		padding-left: 100px;
+		padding-right: 140px;
+	}
+	.mian
+	{
+		float: left;
+		width: 100%;
+		height: 200px;
+		background: green;
+
+	}
+	.left
+	{
+		float: left;
+		height: 200px;
+		width: 100px;
+		margin-left: -100%;
+		background: red;
+		position: relative;
+		left: -100px;		
+	}
+	.right
+	{
+		float: left;
+		height: 200px;
+		width: 140px;
+		margin-left:-140px;
+		background: blue;
+		position: relative;
+		right: -140px;
+	}
+
+</style>
+<body>
+	<div class="wrap">
+		<div class="mian">center1234455667788991010</div>
+		<div class="left">left</div>
+		<div class="right">right</div>
+	</div>
+</body>
+</html>

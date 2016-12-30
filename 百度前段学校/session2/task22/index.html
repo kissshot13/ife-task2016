@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task22</title>
+	<style >
+	div {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		border: 1px solid #000;
+	}
+	#root {
+		width: 520px;
+		height: 150px;
+	}
+	.first {
+		width: 240px;
+		height: 110px;
+	}
+	.second {
+		width: 100px;
+		height: 70px;
+	}
+	.third {
+		width: 30px;
+		height: 30px;
+	}
+	</style>
+	
+</head>
+<body>
+	<div id="root">
+		<div class="first">
+			<div class="second">
+				<div class="third"></div>
+				<div class="third"></div>
+			</div>
+			<div class="second">
+				<div class="third"></div>
+				<div class="third"></div>
+			</div>
+		</div>
+		<div class="first">
+			<div class="second">
+				<div class="third"></div>
+				<div class="third"></div>
+			</div>
+			<div class="second">
+				<div class="third"></div>
+				<div class="third"></div>
+			</div>
+		</div>
+	</div>
+	<input type="submit" value='前序'>
+	<input type="submit" value='中序'>
+	<input type="submit" value='后序'>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

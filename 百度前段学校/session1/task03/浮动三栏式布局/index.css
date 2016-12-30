@@ -1,0 +1,58 @@
+
+body,div
+{
+	padding: 20px;
+	margin:0;
+	box-sizing: border-box;
+}
+img
+{
+	display: block;
+	float: left;
+	margin-bottom: 20px;
+	width: 80px;
+	height: 80px;
+}
+.clearfix
+{
+	overflow: auto;
+}
+div,img
+{
+	border:1px solid #999;
+	background-color: #fff;
+}
+.content
+{
+	margin: 0 auto;
+	background-color: #eee;
+}
+.team-brand
+{
+	width: 200px;
+	float: left;
+	background-color: white;
+}
+.team-brand h3
+{
+	font-size: 14px;
+	height: 20px;
+	line-height: 1.5em;
+	text-indent: 1em;
+}
+.team-pic
+{
+	float: right;
+	width: 120px;
+}
+.team-intro
+{
+	margin-left:220px;
+	margin-right:140px;
+}
+.team-intro p
+{
+	font-size: 14px;
+	line-height: 1.5em;
+
+}

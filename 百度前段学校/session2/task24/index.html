@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task24</title>
+	<style type="text/css">
+	div {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		border: 1px solid #000;
+		box-sizing: border-box;
+	}
+	body>div {
+		min-width: 1020px;
+		height: 150px;
+	}
+	body>div>div {
+		margin: 0 5px;
+		height:110px; 
+	}
+	body>div>div>div {
+		margin: 0 5px;
+		height: 70px;
+	}
+	body>div>div>div>div {
+		margin: 0 5px;
+		height: 30px;
+	}
+	body>div>div>div>div>div {
+		margin: 0 5px;
+	}
+	.active {
+		background: #f00 !important;
+	}
+	.click {
+		background: yellow;
+	}
+
+	</style>
+</head>
+<body>
+	<section style='margin-bottom: 20px;'>
+	<input type="text"  placeholder="请添加搜索的关键字">
+	<input type="submit"  value="深度收索">
+  	<input type="submit"  value="广度搜素">
+  	</section>
+
+</body>
+<script src='index.js'></script>
+</html>

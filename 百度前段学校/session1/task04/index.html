@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>水平居中定位</title>
+</head>
+<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body
+	{
+		box-sizing: border-box;
+	}
+	.contanier
+	{
+		width: 400px;
+		height: 200px;
+		position: absolute;
+		left: 50%;
+		top:50%;
+		margin-top: -100px;
+		margin-left: -200px;
+		background-color: #ccc;
+		overflow: hidden;
+	}
+	.circle1,.circle2
+	{
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		border-radius: 50px;
+		background-color: #fc0;
+	}
+	.circle1
+	{
+		top:-50px;
+		left: -50px;
+	}
+	.circle2
+	{
+		bottom: -50px;
+		right: -50px;
+	}
+</style>
+<body>
+	<div class="contanier">
+		<div class="circle1"></div>
+		<div class="circle2"></div>
+	</div>
+</body>
+</html>
