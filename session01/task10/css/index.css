@@ -1,0 +1,45 @@
+html, body {
+  padding: 0px;
+  margin: 0px; }
+
+.wrapper {
+  display: flex;
+  padding: 20px 20px 0 20px;
+  border: 1px solid #000; }
+
+.wrapper div {
+  border: 1px solid #f00;
+  width: 150px;
+  margin-bottom: 20px;
+  box-sizing: border-box; }
+
+.box1 {
+  height: 120px; }
+
+.box2 {
+  height: 100px; }
+
+.box3 {
+  height: 40px; }
+
+.box4 {
+  height: 200px; }
+
+.box4 {
+  border: 1px solid #00f !important; }
+
+@media (min-width: 641px) {
+  .wrapper {
+    flex-flow: row no-wrap;
+    align-items: center;
+    justify-content: space-between; } }
+@media (max-width: 640px) {
+  .wrapper {
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between; }
+
+  .box4 {
+    order: -1; } }
+
+/*# sourceMappingURL=index.css.map */

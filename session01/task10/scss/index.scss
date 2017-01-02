@@ -1,0 +1,67 @@
+//unit style var
+$pdValue:20px;
+$bdcolor:#f00;
+$width:150px;
+$bdwidth:1px;
+$last-bdcolor:#00f !important;
+$height:120px,100px,40px,200px;
+
+@mixin resetCss {
+	padding: 0px;
+	margin: 0px;
+}
+@mixin wrapperStyle {
+	display: flex;
+	padding: $pdValue $pdValue 0 $pdValue;
+	border: 1px solid #000;
+}
+@mixin flexStyle($wrap,$align,$justify) {
+
+	flex-flow:row $wrap;
+	align-items:$align;
+	justify-content: $justify;
+	
+}
+@mixin borderStyle($color) {
+	border: $bdwidth solid $color;
+}
+@mixin widthStyle {
+	width: 150px;
+}
+
+// 
+html,body {
+	@include resetCss;
+}
+.wrapper {
+	@include wrapperStyle;
+}
+.wrapper div {
+	@include borderStyle($bdcolor);
+	@include widthStyle;
+	margin-bottom: 20px;
+	box-sizing:border-box;
+}
+@for $i from 1 through 4 {
+	.box#{$i} {
+		height: nth($height, $i);
+	}
+	@if $i == 4 {
+		.box#{$i} {
+		@include borderStyle($last-bdcolor);
+		}
+	}
+}
+@media (min-width: 641px) {
+	.wrapper {
+		@include flexStyle(no-wrap,center,space-between);
+	}
+}
+@media (max-width: 640px) {
+	.wrapper {
+		@include flexStyle(wrap,flex-start,space-between);
+	}
+	.box4 {
+		order:-1;
+	}
+}

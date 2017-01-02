@@ -1,0 +1,602 @@
+/*****  通用设置  *****/
+header,.section1,.section2,.section3,.section4,.section5,.section6,.section7,footer {
+	box-sizing: border-box;
+}
+.clearborder {
+	border: none !important;
+}
+.clearfix { 
+  *zoom: 1; 
+} 
+.clearfix:before, 
+.clearfix:after { 
+  display: table; 
+  line-height: 0; 
+  content: ""; 
+} 
+.clearfix:after { 
+  clear: both; 
+} 
+.divider {
+	display: block;
+	width: 50px;
+	margin: 10px auto;
+	border-bottom: 2px solid #000;
+}
+.more-info {
+	display: block;
+	width: 102px;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 14px;
+	line-height: 30px;
+	cursor: pointer;
+}
+.arrow {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	top:50%;
+	margin-top: -20px;
+	box-sizing: border-box;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+}
+input[type='submit'] {
+	cursor: pointer;
+}
+/****************/
+.wrap {
+	min-width:1280px;
+	font-family: '微软雅黑';
+}
+header {
+	height:57px;
+	padding-top: 13px;
+}
+header .brand {
+	margin-left: 58px;
+	font-size: 21px;
+	line-height: 129%;
+	color: rgb(57,57,57);
+}
+header .brand img {
+	vertical-align: middle;
+}
+header .nav {
+	float: right;
+}
+header .nav li {
+	float: left;
+	width: 60px;
+	height: 42px;
+	margin-right: 46px;
+	font-size:14px;
+	text-align: center;
+	line-height: 163%;
+	cursor: pointer;
+}
+header .nav li:last-child {
+	margin-right: 61px;
+	color: rgb(231,79,77);
+}
+header .nav li .icon {
+	display: inline-block;
+	width: 14px;
+	height: 17px;
+	margin-right: 2px;
+	vertical-align: middle;
+	background: url('../img/task_1_7_2.fw.png') no-repeat;
+}
+header .nav .selected,
+header .nav li:hover {
+	border-bottom: 2px solid rgb(231,79,77);
+	color: rgb(231,79,77); 
+}
+header .nav li:last-child:hover {
+	border-bottom: none;
+}
+.main-view {
+	position: relative;
+	height: 690px;
+	font-family: '黑体';
+	background: url('../img/task_1_7_1_02.png') no-repeat;
+	background-size: cover; 
+}
+.main-view .cover {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.32;
+}
+.main-view .title {
+	position: absolute;
+	top:244px;
+	left: 10%;
+	display: block;
+	font-size: 60px;
+	line-height: 45%;
+	font-weight: bold;
+	color: #fff;
+}
+.main-view .intrdo {
+	position: absolute;
+	top: 300px;
+	left: 10%;
+	font-size: 21px;
+	line-height: 176%;
+	color: #fff;
+}
+.main-view button {
+	position: absolute;
+	top: 428px;
+	left: 10%;
+	width: 331px;
+	height: 65px;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	border: none;
+	outline-style: none;
+	background: #d66056;
+	cursor: pointer;
+}
+.seciton1 {
+	height: 250px;
+	padding-top:40px;
+}
+.seciton1 li {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.seciton1 li .img-box {
+	width: 42px;
+	height: 42px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.seciton1 li .img-intro {
+	margin-top: 40px;
+	height: 50px;
+	text-align: center;
+	border-right: 2px solid rgb(155,155,155);
+}
+.seciton1 li p {
+	display: inline-block;
+	width: 158px;
+	font-size: 14px;
+	line-height: 129%;
+	color: rgb(180,180,180);
+}
+.section2 {
+	position: relative;
+	height: 360px;
+	padding-top: 90px;
+	background: rgb(237,237,237);
+}
+.section2 img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section2 h2 {
+	margin-top: 40px;
+	font-size: 54px;
+	line-height: 106%;
+	text-align: center;
+	color: rgba(50,50,50,.5);
+}
+.section3 {
+	position: relative;
+	height: 340px;
+	padding-top: 40px;
+	background: url(../img/task_1_7_1_22.png) no-repeat center;
+	background-size: cover;
+}
+.section3 .cover {
+	position: absolute;
+	z-index: 1;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(225,13,52,0.1)
+}
+.section3 h3,.section3 span,.section3 p,.section3 form {
+	position: relative;
+	z-index: 100;
+	text-align: center;
+	color: #fff;
+}
+.section3 h3 {
+	font-size: 21px;
+	line-height: 2em;
+}
+.section3 .divider {
+	margin-top: 5px;
+	border-bottom: 2px solid #fff;
+}
+.section3 p {
+	margin-top: 25px;
+	font-size: 12px;
+	opacity: 0.8;
+}
+.section3 form {
+	margin-top: 40px;
+	height: 60px;
+}
+.section3 form .input {
+	position: relative;
+	display: inline-block;
+	margin-right: 34px;
+	padding-left: 14px;
+	vertical-align: top;
+}
+.section3  .redarrow {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	right: 9px;
+	top:9px;
+	cursor: pointer;
+	background: url('../img/redarrow.png') center center no-repeat;
+	background-size: cover;
+}
+.section3 form .submenu li,
+.section3 form input {
+	width: 236px;
+	height: 36px;
+	border: 1px solid rgba(225,13,52,0.1);
+	outline-style: none;
+}
+.section3 form input[type="text"] {
+	padding-left: 14px;
+	box-sizing: border-box;	
+}
+.section3 form .menu:hover .submenu,
+.section3 form .menu:focus .submenu{
+	display: block;
+}
+.section3 form .submenu {
+	display: none;
+}
+.section3 form .submenu li {
+	position: relative;
+	height: 30px;
+	font-size: 12px;
+	text-align: left;
+	line-height: 30px;
+	color: #89898a;
+	padding-left: 40px;
+	background: #e3e3e4;
+	box-sizing: border-box;
+}
+.section3 form .submenu .redarrow {
+	display: none;
+}
+.section3 input[type='submit'],
+.section3 .submenu li:hover {
+	color: #fff;
+	background: #cd3d40;
+}
+.section3 .submenu li:hover .redarrow {
+	display: block;
+	left: 6px;
+	top: 6px;
+}
+.section4 {
+	height: 600px;
+	padding-top: 100px;
+	background:#fbfbfb;
+	text-align: center;
+}
+.section4 li {
+	display: inline-block;
+	width: 220px;
+	height: 395px;
+	margin-right: 30px;
+}
+.section4 p {
+	margin-top: 10px;
+}
+.section4 .info {
+	font-size: 12px;
+	color: #888;
+}
+.section4 .special {
+	position: relative;
+	top:-338px;
+}
+.section4 .special img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.section5 .top {
+	height: 566px;
+}
+.section5 .top .leftbox {
+	position: relative;
+	float: left;
+	width: 66.66%;
+	height: 100%;
+	padding-top: 120px;
+	color: #fff;
+	text-align: center;
+	background: url('../img/task_1_7_1_38.png') no-repeat center;
+	background-size: cover;
+	box-sizing: border-box;
+}
+.section5 .top .leftbox h3 {
+	font-size: 49px;
+}
+.section5 .top .leftbox h1 {
+	font-size: 158px;
+	font-family: 'Tahoma';
+}
+.section5 .top .leftbox p {
+	font-size: 22px;
+	line-height: 2em;
+}
+.section5 .top .leftbox .arrow {
+	right: 0;
+	border-right: 40px solid #fff;
+}
+.section5 .top .rightbox {
+	float: right;
+	width: 33.33%;
+	text-align: center;
+	padding-top: 200px;
+	padding-left: 60px;
+	padding-right: 60px;
+	box-sizing: border-box;
+}
+.section5 .top .rightbox h3 {
+	font-size: 21px;
+	line-height: 30px;
+
+}
+.section5 .top .rightbox em {
+	color: #ff002b;
+}
+.section5 .top .rightbox p {
+	font-size: 12px;
+	line-height: 30px;
+	font-family: 'STsong';
+	margin-top: 20px;
+	text-align: left;
+	color: #a8a8a8;
+}
+.section5 .top .rightbox .more-info {
+	border: 1px solid #ff8a9a;
+	color:#ff8a9a;
+}
+.section5 .top .rightbox .points {
+	 margin-top: 20px;
+}
+.section5 .top .rightbox .point {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 15px;
+	border: 1px solid #919191;
+	border-radius: 6px;	
+	cursor: pointer;
+}
+.section5 .top .rightbox .selected {
+	background-color: #919191;
+}
+.section5 .bottom {
+	height: 522px;
+}
+.section5 .bottom .left,
+.section5 .bottom .mid,
+.section5 .bottom .right {
+	float: left;
+	width: 33.33%;
+	height: 100%;
+	padding-top: 180px;
+	box-sizing: border-box;
+}
+.section5 .bottom .left {
+	color: #fff;
+	background: #ff0031;
+}
+.section5 .bottom .mid {
+	color: #000;
+	background: #fff;
+}
+.section5 .bottom .right {
+	position: relative;
+	background: url('../img/task_1_7_1_41.png') no-repeat center;
+	background-size: cover;
+}
+.section5 .bottom p {
+	font-size: 21px;
+	line-height: 30px;
+	text-align: center;
+}
+.section5 .bottom .more-info {
+	width: 168px;
+	height: 40px;
+	font-size: 21px;
+	font-family: 'SimHei';
+	line-height: 40px;
+	border-width: 1px;
+	border-style: solid;
+}
+.section5 .bottom .left .divider {
+	border-bottom: 2px solid #fff;
+}
+.section5 .bottom .mid .divider {
+	border-bottom: 2px solid #000;
+}
+.section5 .bottom .right .arrow {
+	left: 0;
+	border-left: 40px solid #fff;
+}
+.section6 {
+	height: 750px;
+	padding-top: 120px;
+	text-align: center;
+}
+.section6 h2 {
+	font-size: 21px;
+	line-height: 30px;
+	font-family: 'SimHei';
+}
+.section6 .divider {
+	width: 30px;
+	border-color: #ff0038;
+}
+.section6 p {
+	font-size: 12px;
+	line-height: 18px;
+	color: #888;
+}
+.section6 .box {
+	width: 1120px;
+	margin-top: 105px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section6 .explain {
+	float: left;
+	padding-right: 80px;
+	width: 290px;
+}
+.section6 .explain p {
+	margin-bottom: 10px;
+	text-align: left;
+}
+.section6 .explain em {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 14px;
+	text-align: left;
+	font-family: 'SimHei';
+	color: #000;
+}
+
+.section6 .explain span {
+	display: block;
+	text-align: right;
+	cursor: pointer;
+}
+.section6 .explain span i {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url('../img/task_1_7_1.png') center center no-repeat;
+	background-size:cover;
+}
+.section6 form {
+ 	float: left;
+	width: 650px;
+	text-align: left;
+}
+.section6 form input {
+	float: left;
+	width: 320px;
+	height: 40px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	border-style:none;
+	outline-style: none;
+	background: #ededef;
+	box-sizing: border-box;
+}
+.section6 form input[name='name'],
+.section6 form input[name='tel'] {
+	margin-right: 10px;
+}
+.section6 form input[type='text'] {
+	padding-left: 14px;
+}
+.section6 form textarea {
+	width: 636px;
+	height: 120px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	padding-left: 14px;
+	border-style: none;
+	outline-style: none;
+	background: #ededef;
+}
+.section6 form input[type="submit"] {
+	width: 650px;
+}
+.section7 {
+	height: 360px;
+	padding-top: 120px;
+	text-align: center;
+	color: #fff;
+	background: #32343f;
+}
+.section7 h2 {
+	font-size: 21px;
+	line-height: 48px;
+	font-family: 'SimHei';
+}
+.section7 p {
+	margin-bottom: 20px;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: 'SimSun';
+}
+.section7 input[type="email"] {
+	width: 430px;
+	height: 40px;
+	font-size: 16px;
+	line-height: 38px;
+	padding-left: 14px;
+	border: 1px solid #ededef;
+	outline-style: none;
+	box-sizing: border-box;
+}
+.section7 input[type='submit'] {
+	width: 80px;
+	height: 40px;
+	margin-left: -5px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #fff;
+	border: none;
+	background-color: #6f7178;
+}
+.section7 ul {
+	display: block;
+	margin:  20px auto;
+}
+.section7 ul li {
+	display: inline-block;
+}
+.section7 ul li a {
+	display: block;
+	width: 30px;
+	height: 25px;
+	margin-right: 20px;
+}
+footer {
+	height: 60px;
+	padding-top: 30px;
+	background: #2f2e39;
+}
+footer span {
+	margin-left: 80px;
+	font-size: 12px;
+	color: #fff;
+
+}
+footer a {
+	float: right;
+	margin-right: 40px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #fff;
+}
+
+

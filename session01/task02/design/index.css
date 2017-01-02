@@ -1,0 +1,199 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	font-family: Arial, sans-serif；
+}
+ul
+{
+	text-decoration: none;
+}
+body
+{
+	background: rgb(222,222,222);
+	box-sizing: border-box;
+	width: 100%;
+}
+nav{
+
+	width: 100%;
+	height: 46px;
+	background:rgb(51,51,51);
+	padding: 5px;
+	margin-bottom: 40px;
+	min-width: 1220px;
+
+}
+nav img
+{
+	height: 46px;
+}
+nav ul
+{
+	float: right;
+	padding-top: 15px;
+}
+nav ul li 
+{
+	float: left;
+	margin-right: 20px;
+}
+nav ul li a
+{
+	color: #fff;
+	font-size: 10px;
+	height: 16px;
+	line-height: 16px;
+}
+article,.section
+{
+	display: block;
+	width: 1180px;
+	background: #fff;
+	margin: 20px auto;
+	padding:40px 20px;
+	line-height: 18px;
+	box-shadow: 2px 2px 2px #ccc;
+}
+article h2
+{
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+article h3
+{
+	height: 20px;
+	line-height: 20px;
+	margin-bottom: 20px;
+	color: #666;
+	font-weight: 200;
+}
+article h4
+{
+	height: 10px;
+	line-height: 10px;
+	font-size: 10px;
+	margin-bottom: 20px;
+	color: #aaa;
+	font-weight: 100;
+}
+article p
+{
+	text-indent: 2em;
+	line-height: 25px;
+	font-size: 14px;
+}
+article img
+{
+	margin: 10px 0;
+}
+article ul
+{
+	list-style: none;
+}
+article .imgbox
+{
+
+	border:1px solid #888;
+	margin-bottom: 20px;
+	width: 140px;
+	padding: 10px;
+}
+article .imgbox p
+{
+}
+article .imgbox img
+{
+	width: 140px;
+	height: 140px;
+}
+article ol
+{
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+table 
+{
+	border-collapse: collapse; 
+	/*background-color: red;*/
+	width: 100%;
+	border-color: #ccc;
+}
+table caption { text-align: left; }
+table tr:first-child
+{
+	background-color: #343434;
+	color: #fff;
+}
+table tr:last-child
+{
+	background-color: rgb(204,204,204);
+	border-color: rgb(204,204,204);
+	text-align: left;
+	text-indent: 0.5em;
+}
+table td
+{
+	font-size: 12px;
+	line-height: 2em;
+	height: 2em;
+	text-indent: 0.5em;
+}
+.section{line-height: 2em;}
+.section h2
+{
+	border-left: 5px solid #bbb;
+	font-size: 18px;
+	text-indent: 1em;
+}
+.section form
+{
+	font-size: 14px;
+}
+.section form label
+{
+	/*display: inline-block;*/
+	display: block;
+	width: 300px;
+	float: left;
+	text-align: right;
+	padding-right: 10px;
+	/*background-color: red;*/
+}
+.section form p
+{
+	margin-left: 310px;
+	font-size: 12px;
+	color: #888;
+}
+.section form textarea
+{
+	margin-top: 10px;
+}
+#submit
+{
+	height: 40px;
+	width: 80%;
+	background-color: rgb(51,65,207);
+	border-style: none;
+	margin:5px auto;
+	display: block;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 40px;
+	color: white;
+}
+footer
+{
+	height: 80px;
+	width: 100%;
+	min-width: 1220x;
+	background-color: #000;
+	color: #fff;
+	font-size: 16px;
+	line-height: 80px;
+	text-align: center;
+}
+
+

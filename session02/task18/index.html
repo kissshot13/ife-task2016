@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task18</title>
+	<style>
+		html,body {
+			padding: 0;
+			margin: 0;
+		}
+		#queue span {
+			display: inline-block;
+			height: 40px;
+			line-height: 40px;
+			padding: 0 10px;
+			/*width: 40px;*/
+			margin: 10px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<input  id='text' type="text" >
+	<input class="submit" id='leftin' type="submit"  value="左侧入">
+	<input class="submit" id='rightin' type="submit"  value="右侧入">
+	<input class="submit" id='leftout' type="submit"  value="左侧出">
+	<input class="submit" id='rightout' type="submit"  value="右侧出">
+	<div id='queue'>
+	</div>
+	<script >
+	var list = [];
+	var nowel = '';
+	var queue = document.getElementById('queue');
+	var libtn = document.getElementById('leftin');
+	var ribtn = document.getElementById('rightin');
+	var robtn = document.getElementById('rightout');
+	var lobtn = document.getElementById('leftout');
+	window.onload = function(){
+		 addclick();
+	};
+	function addclick() {
+
+		libtn.addEventListener('click',function (e){
+			infunc(leftin);
+		});
+
+		ribtn.addEventListener('click',function (e){
+			infunc(rightin);
+		});
+
+		robtn.addEventListener('click',function(e){
+			rightout();
+			render();
+		});
+
+		lobtn.addEventListener('click',function(e){
+			leftout();
+			render();
+		});
+
+	}
+
+	function infunc (fu){
+		var text = document.getElementById('text').value;
+			if (text) {
+				fu(text);
+				document.getElementById('text').value = '';
+				render();
+			}	
+	}
+
+	function rightin(val) {
+		list.push(val);
+	}
+	function leftin(val) {
+		list.unshift(val);
+	}
+	function leftout() {
+		var val = list[0];
+        list.shift();
+        alert(val);
+	}
+	function rightout() {
+		var val = list[list.length-1];
+		list.pop();
+		alert(val);
+	}
+
+	function render(){
+		var span ='';
+		list.forEach(function (val) {
+			span += '<span>'+val+'</span>';
+		});
+		queue.innerHTML = span;
+		delEvent();
+	}
+
+	function delEvent() {
+		var spans = queue.children;
+		for (var i = 0; i < spans.length; i++) {
+			spans[i].addEventListener('click',function (j) { 
+				return function () {
+					list.splice(j,1);
+					console.log(list);
+					render();
+				};
+			}(i));
+		}
+	}
+
+	</script>
+</body>
+</html>

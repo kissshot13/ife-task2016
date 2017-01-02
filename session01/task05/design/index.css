@@ -1,0 +1,209 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	font-family: Arial, sans-serif；
+}
+ul
+{
+	text-decoration: none;
+}
+body
+{
+	background: rgb(222,222,222);
+	width: 100%;
+	min-width: 800px;
+}
+.clearfix
+{
+	overflow: auto;
+}
+nav
+{
+	height: 46px;
+	background:rgb(51,51,51);
+	padding: 5px;
+	margin-bottom: 40px;
+}
+nav img
+{
+	height: 46px;
+}
+nav ul
+{
+	float: right;
+	padding-top: 15px;
+}
+nav ul li 
+{
+	float: left;
+	margin-right: 20px;
+}
+nav ul li:last-child
+{	
+	margin-right: 0;
+}
+nav ul li a
+{
+	color: #fff;
+	font-size: 10px;
+	height: 16px;
+	line-height: 16px;
+}
+article,aside
+{
+	background: #fff;
+	margin-bottom: 40px;
+	padding:40px 20px;
+	line-height: 18px;
+	box-shadow: 2px 2px 2px #ccc;
+}
+article 
+{
+	margin-right: 380px;
+	margin-left: 20px;
+}
+
+article h2
+{
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+article h3
+{
+	height: 20px;
+	line-height: 20px;
+	margin-bottom: 20px;
+	color: #666;
+	font-weight: 200;
+}
+article h4
+{
+	height: 10px;
+	line-height: 10px;
+	font-size: 10px;
+	margin-bottom: 20px;
+	color: #aaa;
+	font-weight: 100;
+}
+article p
+{
+	text-indent: 2em;
+	line-height: 25px;
+	font-size: 14px;
+}
+article img
+{
+	margin: 10px 0;
+}
+article ul
+{
+	list-style: none;
+}
+article .imgbox
+{
+	border:1px solid #888;
+	margin:10px;
+	margin-left: 0;
+	width: 140px;
+	padding: 10px;
+	float: left;
+}
+
+article .imgbox img
+{
+	width: 140px;
+	height: 140px;
+}
+article ol
+{
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+table 
+{
+	border-collapse: collapse; 
+	width: 100%;
+	border-color: #ccc;
+}
+table caption { text-align: left; }
+table tr:first-child
+{
+	background-color: #343434;
+	color: #fff;
+}
+table tr:last-child
+{
+	background-color: rgb(204,204,204);
+	border-color: rgb(204,204,204);
+	text-align: left;
+	text-indent: 0.5em;
+}
+table td
+{
+	font-size: 12px;
+	line-height: 2em;
+	height: 2em;
+	text-indent: 0.5em;
+}
+aside
+{
+	float: right;
+	line-height: 2em;
+	width: 300px;
+	margin-right: 20px;
+}
+aside h2
+{
+	border-left: 5px solid #bbb;
+	font-size: 18px;
+}
+aside form
+{
+	font-size: 14px;
+}
+aside form label
+{
+	display: block;
+	width: 120px;
+	float: left;
+	text-align: right;
+	padding-right: 10px;
+}
+aside form p
+{
+	margin-left: 130px;
+	font-size: 12px;
+	color: #888;
+}
+aside form textarea
+{
+	margin-top: 10px;
+}
+#submit
+{
+	height: 40px;
+	width: 80%;
+	background-color: rgb(51,65,207);
+	border-style: none;
+	margin:5px auto;
+	display: block;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 40px;
+	color: white;
+}
+footer
+{
+	height: 80px;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	font-size: 16px;
+	line-height: 80px;
+	text-align: center;
+}
+
+

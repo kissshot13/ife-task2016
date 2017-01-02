@@ -1,0 +1,68 @@
+// unit style var
+$height: 50px;
+$pdValue:10px;
+$bgColor:#eee;
+$bdColor:#999;
+$bdwidth:1px;
+
+@mixin clearfix {
+	content: "";
+	display: table;
+	clear:both;
+}
+@mixin innerStyle {
+	height: $height;
+	border: $bdwidth solid $bdColor;
+	background: $bgColor;
+}
+@mixin outerStyle {
+	float: left;
+	padding: $pdValue;
+	box-sizing: border-box;
+}
+
+@mixin resetcss {
+	padding: 0;
+	margin: 0;
+}
+@mixin grid($flag) {
+	@if $flag {
+		@for $i from 1 through 12 {
+			.col-md-#{$i} {
+				width: (100%/12*$i);
+			}
+		}
+
+	} 
+	@else {
+		@for $i from 1 through 12 {
+			.col-sm-#{$i} {
+				width:(100%/12*$i);
+			}
+		}
+	}
+}
+// style part
+html,body {
+	@include resetcss;
+}
+.wrapper {
+	padding: $pdValue;
+	border: $bdwidth solid $bdColor;
+}
+.wrapper::before,.wrapper:after {
+	@include clearfix;
+}
+.outer {
+	@include outerStyle;
+}
+.inner {
+	@include innerStyle;
+}
+@media (min-width: 769px) {
+	@include grid(true);
+}
+@media (max-width: 768px) {
+	@include grid(false);
+}
+
