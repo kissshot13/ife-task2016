@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task30</title>
+    <style type="text/css">
+    	html,body,label,input,p {
+    		padding: 0;
+    		margin: 0;
+    		font-size: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    	}
+    	input {
+    		box-sizing: border-box;
+    	}
+    	.wrapper {
+			margin: 20px auto;
+			width: 800px;
+    	}
+        .section {
+            margin: 20px;
+        }
+
+    	label {
+            display: inline-block;
+    		width: 150px;
+    		font-weight: bold;
+    		font-size: 28px;
+            text-align: right;
+    		line-height: 48px;
+    	}
+    	input[type='text'] {
+    		width: 540px;
+    		height: 48px;
+    		font-size: 24px;
+    		vertical-align:top;
+    		padding-left: 10px;
+    		border:1px solid #a8a8a8;
+    		border-radius: 5px;
+    		outline: none;
+    		
+    	}
+    	input[type='submit'] {
+            float: right;
+    		width: 	110px;
+    		height: 48px;
+            margin-right: 40px;
+    		font-size: 24px;
+    		color: #fff;
+    		border:none;
+    		outline: none;
+    		cursor: pointer;
+    		border-radius: 5px;
+    		background: #2f79ba;
+    	}
+    	p {
+    		margin-top: 10px;
+			margin-left: 150px;
+			font-size: 28px;
+			font-weight: bold;
+			color: #a8a8a8;
+    	}
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+	<div class="wrapper">
+        <div class="section">
+            <label for="name">名称：</label>
+            <input id='name'type="text" value="">
+             <p class="name-info hidden">必填，长度为4~16个字符</p>
+        </div>
+        <div class="section">
+            <label for="password">密码：</label>
+            <input id='password'type="text" value="">
+             <p class="password-info hidden">必填，长度为8-16个字符串，可以是数字、字母和下划线</p>
+        </div>
+        <div class="section">
+            <label for="ver-possword">确认密码：</label>
+            <input id='ver-possword'type="text" value="">
+             <p class="ver-poosword-info hidden">必填，长度为4~16个字符</p>
+        </div>
+        <div class="section">
+            <label for="email">邮箱：</label>
+            <input id='email'type="text" value="">
+             <p class="email-info hidden">必填，长度为4~16个字符</p>
+        </div>
+        <div class="section">
+            <label for="phone">手机：</label>
+            <input id='phone'type="text" value="">
+             <p class="phone-info hidden">必填，长度为4~16个字符</p>
+        </div>
+		
+        <input type="submit"  value="确认提交">
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
