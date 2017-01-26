@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task29</title>
+    <style type="text/css">
+    	html,body,label,input,p {
+    		padding: 0;
+    		margin: 0;
+    		font-size: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    	}
+    	input {
+    		box-sizing: border-box;
+    	}
+    	.wrapper {
+			margin: 20px auto;
+			width: 800px;
+    	}
+    	label {
+    		width: 90px;
+    		font-weight: bold;
+    		font-size: 28px;
+    		line-height: 48px;
+    	}
+    	input[type='text'] {
+    		width: 540px;
+    		height: 48px;
+    		font-size: 24px;
+    		vertical-align:top;
+    		padding-left: 10px;
+    		border:1px solid #a8a8a8;
+    		border-radius: 5px;
+    		outline: none;
+    		
+    	}
+    	input[type='submit'] {
+    		width: 	110px;
+    		height: 48px;
+    		font-size: 28px;
+    		color: #fff;
+    		border:none;
+    		outline: none;
+    		cursor: pointer;
+    		border-radius: 5px;
+    		background: #2f79ba;
+    	}
+    	p {
+    		margin-top: 10px;
+			margin-left: 90px;
+			font-size: 28px;
+			font-weight: bold;
+			color: #a8a8a8;
+    	}
+    </style>
+</head>
+<body>
+	<div class="wrapper">
+		<label>名称：<input type="text" value=""></label>
+		<input type="submit"  value="验证">
+		<p class="info">必填，长度为4~16个字符</p>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
